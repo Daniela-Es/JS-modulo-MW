@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <!-- link a css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Repaso JS</title>
+</head>
+
+<body>
+
+    <!-- <div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Probando comunicacion</h5>
+        <p class="card-text">Carta de Bootstrap</p>
+    </div>
+</div> -->
+
+
+    <!-- header -->
+    <header>
+        <h1 class="p-3 text-center"> Repaso de Git</h1>
+    </header>
+
+    <!-- main -->
+    <main>
+        <!-- seccion de preguntas con acordeon -->
+        <section>
+            <h2 class="p-5">Preguntas basicas</h2>
+            <div class="accordion" id="accordionExample">
+                <!-- primer elemento del acordeon -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Que es un SVC (Sistema de Control de Versiones)?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>SVC o Sistema de Control de Versiones</strong> es una herramienta que nos permite
+                            registrar los cambios que atraviesa el codigo durante el desarrollo del mismo. Ademas,
+                            permite trabajar de manera colaborativa en el proyecto
+                        </div>
+                    </div>
+                </div>
+                <!-- segundo elemento del acordeon -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Que es Git?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Git</strong> es un SVC que se distribuye de manera gratuita y de codigo abierto. Fue
+                            creado por el mismo creador de Linux (Linus Torvalds)
+                        </div>
+                    </div>
+                </div>
+                <!-- tercer elemento del acordeon -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Que sistemas de Git gratis existen?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Algunas alternativas a Git que son gratuitas pueden ser:
+                            <ul>
+                                <li>Gitea</li>
+                                <li>GitBucket</li>
+                                <li>GitPrep</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- seccion de comandos de git con tablas -->
+        <section>
+            <h2 class="p-5">Comandos de git </h2>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Comandos</th>
+                        <th scope="col">Uso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>git</td>
+                        <td>Es el prefijo para poder trabajar con GIT</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>git init</td>
+                        <td>Iniciamos GIT en la carpeta donde esta el proyecto</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>git add</td>
+                        <td>Aniadimos los archivos para el commit. Se puede utilizar un punto (.) para aniadir TODOS los
+                            archivos</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>git commit</td>
+                        <td>Hace el primer commit. Podemos aniadir -m y un mensaje entre comillas que explique el commit
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>git push</td>
+                        <td>Sube al repositorio </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- seccion de pasos a seguir para subir un nuevo repo -->
+        <section>
+            <h2 class="p-5">Pasos a seguir para subir un proyecto a un repositorio</h2>
+            <!-- <ol>
+                <li>Desde nuestra cuenta de GitHub, en la parte superior derecha, dar click en el simbolo de mas (+) y
+                    elegir "New repository"</li>
+                <li>Elegir un nombre para el repositorio</li>
+                <li>(Opcional) Elegir una descripcion para el repositorio</li>
+                <li>Seleccionar si se desea que el repositorio sea publico o privado</li>
+                <li> </li>
+            </ol> -->
+
+            <div class="row p-3">
+                <div class="col-4">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-nuevo-list"
+                            data-bs-toggle="list" href="#list-nuevo" role="tab" aria-controls="nuevo">Nuevo
+                            repositorio</a>
+                        <a class="list-group-item list-group-item-action" id="list-nombre-list" data-bs-toggle="list"
+                            href="#list-nombre" role="tab" aria-controls="nombre">Nombre</a>
+                        <a class="list-group-item list-group-item-action" id="list-description-list"
+                            data-bs-toggle="list" href="#list-description" role="tab"
+                            aria-controls="description">Descripcion</a>
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list"
+                            href="#list-settings" role="tab" aria-controls="settings">Publico o privado</a>
+                        <a class="list-group-item list-group-item-action" id="list-subir-list" data-bs-toggle="list"
+                            href="#list-subir" role="tab" aria-controls="subir">Subir repo</a>
+                        <a class="list-group-item list-group-item-action" id="list-command-list" data-bs-toggle="list"
+                            href="#list-command" role="tab" aria-controls="command">Comandos</a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-nuevo" role="tabpanel"
+                            aria-labelledby="list-nuevo-list">Desde nuestra cuenta de GitHub, en la parte superior
+                            derecha, dar click en el simbolo de mas (+) y
+                            elegir "New repository"</div>
+                        <div class="tab-pane fade" id="list-nombre" role="tabpanel" aria-labelledby="list-nombre-list">
+                            Elegir un nombre para el repositorio</div>
+                        <div class="tab-pane fade" id="list-description" role="tabpanel"
+                            aria-labelledby="list-description-list">(Opcional) Elegir una descripcion para el
+                            repositorio
+                        </div>
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                            aria-labelledby="list-settings-list">Seleccionar si se desea que el repositorio sea publico
+                            o privado</div>
+                        <div class="tab-pane fade" id="list-subir" role="tabpanel" aria-labelledby="list-subir-list">
+                            Accede a tu terminal y desde la carpeta donde se encuentran los archivos que subiras el
+                            respositorio ejecuta los comandos siguientes: </div>
+                        <div class="tab-pane fade" id="list-command" role="tabpanel" aria-labelledby="list-command-list">
+                            <ol>
+                                <li>git init</li>
+                                <li>git add .</li>
+                                <li>git commit -m "comentario para el primer commit"</li>
+                                <li>git remote add origin https://github.com/aqui-tu-repo.git</li>
+                                <li>git push -u origin master</li>
+                            </ol>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+<!-- comunicacion con javascript -->
+<!-- <script src="../js/app.js"></script> -->
+<!-- <script src="../js/pk3.js"></script> -->
+<script src="../js/repaso.js"></script>
+
+</html>
